@@ -50,7 +50,7 @@ var express=require("express");
 var cors=require('cors');
 var app=express();
 
-mongoose.connect('mongodb://localhost:27017/expense-tracker').then(console.log("connected"))
+mongoose.connect('mongodb+srv://21ita43:dhiya_12@cluster0.utlmij8.mongodb.net/expense-tracker').then(console.log("connected"))
 
 const expenseSchema=new mongoose.Schema({
     date:{type:String,required:true},
